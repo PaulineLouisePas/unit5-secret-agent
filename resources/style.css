@@ -1,0 +1,97 @@
+html {
+  font-size: 16px;
+  font-family: helvetica;
+  color: white;
+}
+
+/* NOTE: header layout and design */
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+}
+
+header .companyname {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 15%;
+}
+header img {
+  margin: 0.5rem;
+  height: 1.5rem;
+  width: auto;
+}
+
+header h1 {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* NOTE: Banner layout and design */
+
+.banner {
+  width: 100%;
+  height: 600px;
+  background-image: url(./images/banner.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.sloganbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  width: 33%;
+  height: 50%;
+  position: relative;
+  top: 25%;
+  left: 15%;
+}
+
+.sloganbox h2 {
+  font-size: 1.25rem;
+  margin: 0.75rem 1.5rem;
+}
+
+.sloganbox h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.75rem 1.5rem;
+}
+
+/* NOTE: menubar style and design */
+
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4rem;
+  background-color: firebrick;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0% 15%;
+}
+
+.nav a {
+  color: white;
+  text-decoration-line: none;
+  font-size: 1.25rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 8rem;
+  padding-left: 15%;
+}

@@ -8,6 +8,7 @@ html {
 
 header {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 4rem;
@@ -17,8 +18,6 @@ header {
 header .companyname {
   display: flex;
   align-items: center;
-  position: relative;
-  left: 15%;
   width: 960px;
 }
 header img {
@@ -32,6 +31,18 @@ header h1 {
   font-size: 1rem;
 }
 
+@media only screen and (max-width:1024px) {
+  header .companyname {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .companyname {
+    font-size: 0.77rem;
+  }
+}
+
 /* NOTE: Banner layout and design */
 
 .banner {
@@ -42,16 +53,20 @@ header h1 {
   background-size: 100%;
 }
 
+.sloganline {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+}
+
 .sloganbox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: black;
   width: 25rem;
   height: auto;
   position: relative;
   top: 9rem;
-  left: 15%;
 }
 
 .sloganbox h2 {
@@ -69,6 +84,40 @@ header h1 {
   margin-bottom: 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .sloganline {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .banner {
+    height: 15rem;
+  }
+
+  .sloganbox {
+    position: relative;
+    top: 10rem;
+    height: 4.5rem;
+    width: 100%;
+  }
+
+.sloganbox h1 {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.sloganbox h2 {
+  font-size: 0.77rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+  )
+}
+
 /* NOTE: menubar layout and design */
 
 .menubar {
@@ -80,15 +129,30 @@ header h1 {
   background-color: firebrick;
 }
 
-.nav {
+.navbigscreen a {
+  color: white;
+  text-decoration-line: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbigscreen {
   display: flex;
   justify-content: space-between;
   width: 960px;
+  }
+  .navsmallscreen {
+  display: none;
+  }
 }
 
-.nav a {
-  color: white;
-  text-decoration-line: none;
+@media only screen and (max-width: 1024px) {
+  .navbigscreen {
+  display: none;
+  }
+  .navmedscreen {
+  display: flex;
+  justify-content: center;
+  }
 }
 
 /* NOTE: Product section layout and design */
@@ -106,7 +170,7 @@ header h1 {
   width: 960px;
 }
 
-.productbox {
+.productbox{
   border: 4px solid black;
   width: 30%;
   height: 30%;
@@ -163,6 +227,49 @@ header h1 {
   width: 100%;
   text-align: center;
 }
+
+@media only screen and (max-width: 1024px) {
+  .productbox {
+    width: 47%;
+    height: 47%;
+  }
+  .hidemedscreen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+.productimages {
+  width: 90%;
+}
+  .productbox {
+    width: 100%;
+    height: 100%;
+  }
+
+  .descriptionbox {
+    height: 2rem;
+  }
+
+  .hidesmallscreen {
+    display: none;
+  }
+
+  .infoline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+  }
+
+  .infobox {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
 /* NOTE: Footer section layout and design */
 
 footer {
@@ -177,4 +284,12 @@ footer {
 footer span {
   width: 960px;
   text-align: left;
+}
+
+@media only screen and (max-width: 470px) {
+  footer span {
+    width: 100%;
+    text-align: center;
+    font-size: 0.77rem;
+  }
 }

@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
   font-family: helvetica;
   color: white;
 }
@@ -19,23 +19,24 @@ header .companyname {
   align-items: center;
   position: relative;
   left: 15%;
+  width: 960px;
 }
 header img {
-  margin: 0.5rem;
+  margin: 0.66rem 0.5rem;
   height: 1.5rem;
   width: auto;
 }
 
 header h1 {
-  margin: 0.5rem;
-  font-size: 1.25rem;
+  margin: 0.66rem 0.5rem;
+  font-size: 1rem;
 }
 
 /* NOTE: Banner layout and design */
 
 .banner {
   width: 100%;
-  height: 600px;
+  height: 25rem;
   background-image: url(./images/banner.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -46,25 +47,29 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   background-color: black;
-  width: 33%;
-  height: 50%;
+  width: 25rem;
+  height: auto;
   position: relative;
-  top: 25%;
+  top: 9rem;
   left: 15%;
 }
 
 .sloganbox h2 {
-  font-size: 1.25rem;
-  margin: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  margin-left: 3rem;
 }
 
 .sloganbox h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin: 0.75rem 1.5rem;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
 }
 
-/* NOTE: menubar style and design */
+/* NOTE: menubar layout and design */
 
 .menubar {
   display: flex;
@@ -78,20 +83,98 @@ header h1 {
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 0% 15%;
+  width: 960px;
 }
 
 .nav a {
   color: white;
   text-decoration-line: none;
-  font-size: 1.25rem;
 }
+
+/* NOTE: Product section layout and design */
+
+.productsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productimages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 960px;
+}
+
+.productbox {
+  border: 4px solid black;
+  width: 30%;
+  height: 30%;
+}
+
+.imagebox {
+  height: 13rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagebox img {
+  max-height: 9rem;
+  max-width: 9rem;
+}
+
+.descriptionbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 4rem;
+  padding: 0.5rem 0rem;
+}
+
+.infoline {
+  display: flex;
+  justify-content: space-between;
+  margin: 2.5% 0%;
+  width: 960px;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 35%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.infobox h3 {
+  padding: 1rem;
+}
+
+.infobox h4 {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+/* NOTE: Footer section layout and design */
 
 footer {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: black;
-  height: 8rem;
-  padding-left: 15%;
+  height: 5rem;
+  width: 100%;
+}
+
+footer span {
+  width: 960px;
+  text-align: left;
 }
